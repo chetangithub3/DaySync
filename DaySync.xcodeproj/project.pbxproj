@@ -15,6 +15,7 @@
 		61A3029C2AB67EBC00AF1901 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A3029B2AB67EBC00AF1901 /* DashboardViewModel.swift */; };
 		61A302A02AB67FA000AF1901 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A3029F2AB67FA000AF1901 /* Constants.swift */; };
 		61A302A32AB6804300AF1901 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A302A22AB6804300AF1901 /* Utility.swift */; };
+		61A302A62AB6868200AF1901 /* DaylightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A302A52AB6868200AF1901 /* DaylightModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		61A3029B2AB67EBC00AF1901 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		61A3029F2AB67FA000AF1901 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		61A302A22AB6804300AF1901 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		61A302A52AB6868200AF1901 /* DaylightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaylightModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		61A302A42AB6807100AF1901 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				61A302A52AB6868200AF1901 /* DaylightModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			files = (
 				61A302A02AB67FA000AF1901 /* Constants.swift in Sources */,
 				61A302972AB67C6100AF1901 /* APIManager.swift in Sources */,
+				61A302A62AB6868200AF1901 /* DaylightModel.swift in Sources */,
 				61A302A32AB6804300AF1901 /* Utility.swift in Sources */,
 				61A3028B2AB67C1E00AF1901 /* ContentView.swift in Sources */,
 				61A302892AB67C1E00AF1901 /* DaySyncApp.swift in Sources */,
