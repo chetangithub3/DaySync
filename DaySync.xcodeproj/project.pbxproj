@@ -12,6 +12,7 @@
 		61A3028D2AB67C1E00AF1901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A3028C2AB67C1E00AF1901 /* Assets.xcassets */; };
 		61A302902AB67C1E00AF1901 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A3028F2AB67C1E00AF1901 /* Preview Assets.xcassets */; };
 		61A302972AB67C6100AF1901 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A302962AB67C6100AF1901 /* APIManager.swift */; };
+		61A3029C2AB67EBC00AF1901 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A3029B2AB67EBC00AF1901 /* DashboardViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		61A3028C2AB67C1E00AF1901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61A3028F2AB67C1E00AF1901 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		61A302962AB67C6100AF1901 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		61A3029B2AB67EBC00AF1901 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +55,12 @@
 		61A302872AB67C1E00AF1901 /* DaySync */ = {
 			isa = PBXGroup;
 			children = (
+				61A3029A2AB67E8700AF1901 /* View Models */,
 				61A302882AB67C1E00AF1901 /* DaySyncApp.swift */,
-				61A3028A2AB67C1E00AF1901 /* ContentView.swift */,
+				61A302992AB67E7300AF1901 /* Views */,
 				61A3028C2AB67C1E00AF1901 /* Assets.xcassets */,
+				61A302982AB67E5D00AF1901 /* Network Module */,
 				61A3028E2AB67C1E00AF1901 /* Preview Content */,
-				61A302962AB67C6100AF1901 /* APIManager.swift */,
 			);
 			path = DaySync;
 			sourceTree = "<group>";
@@ -68,6 +71,30 @@
 				61A3028F2AB67C1E00AF1901 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		61A302982AB67E5D00AF1901 /* Network Module */ = {
+			isa = PBXGroup;
+			children = (
+				61A302962AB67C6100AF1901 /* APIManager.swift */,
+			);
+			path = "Network Module";
+			sourceTree = "<group>";
+		};
+		61A302992AB67E7300AF1901 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61A3028A2AB67C1E00AF1901 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		61A3029A2AB67E8700AF1901 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				61A3029B2AB67EBC00AF1901 /* DashboardViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +170,7 @@
 				61A302972AB67C6100AF1901 /* APIManager.swift in Sources */,
 				61A3028B2AB67C1E00AF1901 /* ContentView.swift in Sources */,
 				61A302892AB67C1E00AF1901 /* DaySyncApp.swift in Sources */,
+				61A3029C2AB67EBC00AF1901 /* DashboardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
