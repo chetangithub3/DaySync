@@ -9,8 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var viewModel = DashboardViewModel()
-    @State var title = "Hello, world!"
+    @AppStorage("sleepTime") var sleepTime = 8
+    @State private var selectedTime = Date()
     @State private var selectedDate = Date()
+    
     var body: some View {
         VStack {
             DatePicker(
@@ -25,6 +27,12 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Sunrise time: \(viewModel.sunrise)")
             Text("Sunset time: \(viewModel.sunset)")
+            
+            DatePicker("Select a time", selection: $selectedTime, displayedComponents: .hourAndMinute)
+                           .labelsHidden()
+                           .datePickerStyle(WheelDatePickerStyle())
+                           .environment(\.locale, Locale(identifier: "en_US")
+                                         )
 
         }
         .padding()
