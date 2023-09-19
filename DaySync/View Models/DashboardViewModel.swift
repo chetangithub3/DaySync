@@ -20,14 +20,14 @@ class DashboardViewModel: ObservableObject {
     }
     
     
-    func getDaylightDetails(){
+    func getDaylightDetails(for date: Date){
         guard let lat = locationManager.exposedLocation?.coordinate.latitude.magnitude, let lon = locationManager.exposedLocation?.coordinate.longitude.magnitude else {
             return
         }
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        let date = dateFormatter.string(from: Date())
-        var url = Constants.API.baseURL.rawValue + "?lat=\(lat)" + "&lon=\(lon)" + "&date=\(date)"
+        let selectedDate = dateFormatter.string(from: date)
+        var url = Constants.API.baseURL.rawValue + "?lat=\(lat)" + "&lon=\(lon)" + "&date=\(selectedDate)"
         fetchData(from: URL(string: url)!)
         
     }

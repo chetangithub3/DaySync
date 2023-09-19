@@ -10,8 +10,16 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var viewModel = DashboardViewModel()
     @State var title = "Hello, world!"
+    @State private var selectedDate = Date()
     var body: some View {
         VStack {
+            DatePicker(
+                            "Date",
+                            selection: $selectedDate,
+                            displayedComponents: .date
+                        )
+                        .datePickerStyle(CompactDatePickerStyle())
+            
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
@@ -21,7 +29,10 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-            viewModel.getDaylightDetails()
+            viewModel.getDaylightDetails(for: selectedDate)
+        }
+        .onChange(of: selectedDate) { _ in
+            viewModel.getDaylightDetails(for: selectedDate)
         }
     }
 }
