@@ -8,12 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var viewModel = DashboardViewModel()
+    @State var title = "Hello, world!"
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Saloni Sunrise time: \(viewModel.sunrise)")
+            
+            
+            Button {
+                viewModel.getDaylightDetails()
+            } label: {
+                Text("Saloni poni")
+                    .foregroundColor(Color.white)
+                    .padding()
+                
+                    .background(Color.blue)
+                    .cornerRadius(10)
+                
+            }
+
         }
         .padding()
     }
