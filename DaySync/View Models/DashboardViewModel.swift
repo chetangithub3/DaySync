@@ -24,7 +24,10 @@ class DashboardViewModel: ObservableObject {
         guard let lat = locationManager.exposedLocation?.coordinate.latitude.magnitude, let lon = locationManager.exposedLocation?.coordinate.longitude.magnitude else {
             return
         }
-        var url = Constants.API.baseURL.rawValue + "?lat=\(lat)" + "&lon=\(lon)"
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let date = dateFormatter.string(from: Date())
+        var url = Constants.API.baseURL.rawValue + "?lat=\(lat)" + "&lon=\(lon)" + "&date=\(date)"
         fetchData(from: URL(string: url)!)
         
     }

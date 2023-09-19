@@ -10,6 +10,8 @@ import Foundation
 struct DaylightInfo: Codable {
     
 }
+
+    // https://sunrise-sunset.org/api
     // MARK: - DaylightModel
 struct DaylightData: Codable {
     let results: Results?
