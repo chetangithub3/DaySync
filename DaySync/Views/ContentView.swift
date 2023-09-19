@@ -15,23 +15,14 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Saloni Sunrise time: \(viewModel.sunrise)")
-            
-            
-            Button {
-                viewModel.getDaylightDetails()
-            } label: {
-                Text("Saloni poni")
-                    .foregroundColor(Color.white)
-                    .padding()
-                
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                
-            }
+            Text("Sunrise time: \(viewModel.sunrise)")
+            Text("Sunset time: \(viewModel.sunset)")
 
         }
         .padding()
+        .onAppear {
+            viewModel.getDaylightDetails()
+        }
     }
 }
 

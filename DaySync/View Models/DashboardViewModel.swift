@@ -11,7 +11,8 @@ import Combine
 
 class DashboardViewModel: ObservableObject {
     
-    @Published var sunrise = "Hello selpuu"
+    @Published var sunrise = ""
+    @Published var sunset = ""
     @ObservedObject var locationManager: LocationManager
     
     init() {
@@ -40,8 +41,8 @@ class DashboardViewModel: ObservableObject {
                         
                 }
             }, receiveValue: { (daylightData: DaylightData) in
-                
-                print(daylightData.results?.sunrise)
+                self.sunrise = daylightData.results?.sunrise ?? ""
+                self.sunset = daylightData.results?.sunset ?? ""
                 
             })
             
