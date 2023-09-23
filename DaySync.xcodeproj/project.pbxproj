@@ -17,6 +17,8 @@
 		61A302A32AB6804300AF1901 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A302A22AB6804300AF1901 /* Utility.swift */; };
 		61A302A62AB6868200AF1901 /* DaylightModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A302A52AB6868200AF1901 /* DaylightModel.swift */; };
 		61A302A82AB9244600AF1901 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A302A72AB9244600AF1901 /* LocationManager.swift */; };
+		61A302B12ABA453B00AF1901 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A302B02ABA453B00AF1901 /* Alarm.swift */; };
+		61A302B32ABB8F6F00AF1901 /* AlarmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A302B22ABB8F6F00AF1901 /* AlarmViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		61A302A22AB6804300AF1901 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		61A302A52AB6868200AF1901 /* DaylightModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaylightModel.swift; sourceTree = "<group>"; };
 		61A302A72AB9244600AF1901 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		61A302B02ABA453B00AF1901 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		61A302B22ABB8F6F00AF1901 /* AlarmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			children = (
 				61A3029B2AB67EBC00AF1901 /* DashboardViewModel.swift */,
 				61A302A72AB9244600AF1901 /* LocationManager.swift */,
+				61A302B22ABB8F6F00AF1901 /* AlarmViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 		61A302A42AB6807100AF1901 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				61A302B02ABA453B00AF1901 /* Alarm.swift */,
 				61A302A52AB6868200AF1901 /* DaylightModel.swift */,
 			);
 			path = Models;
@@ -215,8 +221,10 @@
 				61A302972AB67C6100AF1901 /* APIManager.swift in Sources */,
 				61A302A62AB6868200AF1901 /* DaylightModel.swift in Sources */,
 				61A302A32AB6804300AF1901 /* Utility.swift in Sources */,
+				61A302B32ABB8F6F00AF1901 /* AlarmViewModel.swift in Sources */,
 				61A302A82AB9244600AF1901 /* LocationManager.swift in Sources */,
 				61A3028B2AB67C1E00AF1901 /* ContentView.swift in Sources */,
+				61A302B12ABA453B00AF1901 /* Alarm.swift in Sources */,
 				61A302892AB67C1E00AF1901 /* DaySyncApp.swift in Sources */,
 				61A3029C2AB67EBC00AF1901 /* DashboardViewModel.swift in Sources */,
 			);

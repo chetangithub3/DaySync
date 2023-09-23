@@ -7,3 +7,10 @@
 
 import Foundation
 
+extension Date {
+    var timeFormatter: String {
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        return formatter.string(from: self)
+    }
+}
