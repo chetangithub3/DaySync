@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct DaySyncApp: App {
+    @StateObject var viewModel = DashboardViewModel()
+    @StateObject var alarmViewModel = AlarmsViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView().environmentObject(alarmViewModel)
         }
     }
 }

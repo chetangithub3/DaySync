@@ -7,8 +7,7 @@
 
 import Foundation
 
-struct Alarm: Identifiable {
-    let id = UUID()
+struct Alarm {
     let time: Date
     var isActive: Bool
 }

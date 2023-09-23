@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6192686C2ABFACB9008AE9D5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6192686B2ABFACB9008AE9D5 /* HomeView.swift */; };
 		61A302892AB67C1E00AF1901 /* DaySyncApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A302882AB67C1E00AF1901 /* DaySyncApp.swift */; };
 		61A3028B2AB67C1E00AF1901 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A3028A2AB67C1E00AF1901 /* ContentView.swift */; };
 		61A3028D2AB67C1E00AF1901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A3028C2AB67C1E00AF1901 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6192686B2ABFACB9008AE9D5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		61A302852AB67C1E00AF1901 /* DaySync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaySync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A302882AB67C1E00AF1901 /* DaySyncApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySyncApp.swift; sourceTree = "<group>"; };
 		61A3028A2AB67C1E00AF1901 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				61A3028A2AB67C1E00AF1901 /* ContentView.swift */,
+				6192686B2ABFACB9008AE9D5 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				61A302A62AB6868200AF1901 /* DaylightModel.swift in Sources */,
 				61A302A32AB6804300AF1901 /* Utility.swift in Sources */,
 				61A302B32ABB8F6F00AF1901 /* AlarmViewModel.swift in Sources */,
+				6192686C2ABFACB9008AE9D5 /* HomeView.swift in Sources */,
 				61A302A82AB9244600AF1901 /* LocationManager.swift in Sources */,
 				61A3028B2AB67C1E00AF1901 /* ContentView.swift in Sources */,
 				61A302B12ABA453B00AF1901 /* Alarm.swift in Sources */,
