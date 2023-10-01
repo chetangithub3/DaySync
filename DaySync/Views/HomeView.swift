@@ -10,6 +10,8 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var viewModel: DashboardViewModel
     @EnvironmentObject var alarmViewModel: AlarmsViewModel
+    @State var plusTapped = false
+    
     var body: some View {
         NavigationView {
             VStack{
@@ -18,7 +20,7 @@ struct HomeView: View {
                         .font(.title)
                     Spacer()
                     Button {
-                        //
+                        plusTapped = true
                     } label: {
                         Image(systemName: "plus")
                     }
@@ -33,6 +35,8 @@ struct HomeView: View {
             }.padding()
                 .navigationTitle("Day Sync")
                 
+        }.sheet(isPresented: $plusTapped) {
+            ContentView()
         }
         
         
